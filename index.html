@@ -25,11 +25,52 @@
     <script defer src="./js/jquery.touchSwipe.js"></script>
     <script defer src="./js/gmaps.js"></script>
 
-    <title>La Chouette Agence, agence de création webdesign</title>
-
-    <!-- Analytics -->
-
-    <!-- Analytics END -->
+    <title>
+      La Chouette Agence | Votre agence de création webdesign à Lyon
+    </title>
+    <!-- Données structurées -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "image": [
+          "https://www.lachouetteagence.com/images/visuels/photos/1x1/photo.jpg",
+          "https://www.lachouetteagence.com/images/visuels/photos/4x3/photo.jpg",
+          "https://www.lachouetteagence.com/images/visuels/photos/16x9/photo.jpg"
+         ],
+        "@name: La Chouette Agence",
+        "url": "https://www.lachouetteagence.com",
+        "logo": "https://www.lachouetteagence.com/images/visuels/logos/logo.png",
+        address": {
+          "@type": "PostalAddress",
+          "streetAddress": "2 place Sathonay",
+          "addressLocality": "Lyon",
+          "addressRegion": "ARA",
+          "postalCode": "69001",
+          "addressCountry": "FR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 45.7694377,
+          "longitude": 4.8301204
+        },
+        "email": "mailto:contact@lachouetteagence.com",
+        "telephone": "+33472103080",
+        "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+              ],
+              "opens": "09:00",
+              "closes": "18:00"
+            },
+      }
+    </script>
   </head>
   <body>
     <!-- Principal conteneur -->
@@ -316,8 +357,8 @@
           <div class="row">
             <h2 class="mg-md text-center tc-white">
               Prêt pour redonner vie à votre projet ?
-			</h2>
-			<h2 class="mg-md text-center tc-white">Contactez notre équipe !</h2>
+            </h2>
+            <h2 class="mg-md text-center tc-white">Contactez notre équipe !</h2>
             <div class="col-sm-12 text-center">
               <a
                 href="contact.html"
@@ -341,28 +382,36 @@
               <div class="row row-no-gutters social">
                 <div class="col-sm-3">
                   <div class="text-center">
-                    <a class="social" href="https://www.twitter.com/lachouetteagence"
+                    <a
+                      class="social"
+                      href="https://www.twitter.com/lachouetteagence"
                       ><span class="fa fa-twitter icon-md"></span
                     ></a>
                   </div>
                 </div>
                 <div class="col-sm-3">
                   <div class="text-center">
-                    <a class="social" href="https://www.facebook.com/lachouetteagence"
+                    <a
+                      class="social"
+                      href="https://www.facebook.com/lachouetteagence"
                       ><span class="fa fa-facebook icon-md"></span
                     ></a>
                   </div>
                 </div>
                 <div class="col-sm-3">
                   <div class="text-center">
-                    <a class="social" href="https://www.dribble.com/lachouetteagence"
+                    <a
+                      class="social"
+                      href="https://www.dribble.com/lachouetteagence"
                       ><span class="fa fa-dribbble icon-md"></span
                     ></a>
                   </div>
                 </div>
                 <div class="col-sm-3">
                   <div class="text-center">
-                    <a class="social" href="https://www.instagram.com/lachouetteagence"
+                    <a
+                      class="social"
+                      href="https://www.instagram.com/lachouetteagence"
                       ><span class="fa fa-instagram icon-md"></span
                     ></a>
                   </div>
