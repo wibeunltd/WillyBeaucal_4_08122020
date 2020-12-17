@@ -36,7 +36,7 @@ a:hover {
 }
 
 .bloc-lg {
-    padding: 100px 50px;
+    padding: 50px 50px;
 }
 
 .bloc-md {
@@ -142,6 +142,11 @@ a:hover {
 .d-bloc h6 a:hover,
 .d-bloc p a:hover {
     color: rgba(255, 255, 255, 1);
+}
+
+.bloc-flex{
+    display: flex;
+    flex-direction: column;
 }
 
 .d-bloc .navbar-toggle .icon-bar {
@@ -274,7 +279,7 @@ a:hover {
     padding-left: 0;
 }
 
-#bloc-1-hero h1 {
+#presentation h1 {
     font-size: 32px;
 }
 
@@ -293,6 +298,7 @@ a:hover {
 }
 
 .navbar-brand img {
+    height: 40px;
     max-height: 200px;
     margin: 0 5px 0 0;
     display: inline;
@@ -668,7 +674,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 14px;
 }
 
 .tight-width-whitespace {
@@ -744,7 +750,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgba(165, 147, 99, 0.9);
     padding: 40px 40px 40px 40px;
 }
 
