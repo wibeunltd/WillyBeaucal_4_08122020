@@ -124,7 +124,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    color: rgba(255, 255, 255, 1);
 }
 
 .d-bloc .a-btn:hover,
@@ -141,7 +141,7 @@ a:hover {
 .d-bloc h5 a:hover,
 .d-bloc h6 a:hover,
 .d-bloc p a:hover {
-    color: rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, .6);
 }
 
 .bloc-flex{
@@ -160,7 +160,7 @@ a:hover {
 }
 
 .d-bloc .panel {
-    color: rgba(0, 0, 0, .5);
+    color:rgb(121, 118, 118);
 }
 
 .d-bloc .panel button:hover {
@@ -191,7 +191,7 @@ a:hover {
 
 .d-bloc .panel,
 .l-bloc {
-    color: rgba(0, 0, 0, .5);
+    color:rgb(121, 83, 83);
 }
 
 .d-bloc .panel button:hover,
@@ -344,7 +344,7 @@ a:hover {
 }
 
 .navbar-toggle .icon-bar {
-    background-color: rgba(0, 0, 0, .5);
+    background-color:rgb(121, 118, 118);
     width: 26px;
 }
 
@@ -576,7 +576,7 @@ a[data-lightbox]:hover img {
 .lightbox-caption {
     padding: 20px;
     color: #FFF;
-    background: rgba(0, 0, 0, .5);
+    background:rgb(121, 118, 118);
     position: absolute;
     left: 15px;
     right: 15px;
@@ -590,7 +590,7 @@ a[data-lightbox]:hover img {
     top: 20px;
     right: 20px;
     z-index: 20;
-    background: rgba(0, 0, 0, .5);
+    background:rgb(121, 118, 118);
     border: none;
     line-height: 30px;
     padding: 0 9px 5px;
@@ -608,7 +608,7 @@ a[data-lightbox]:hover img {
 .prev-lightbox {
     font-size: 20px;
     color: rgba(255, 255, 255, .9);
-    background: rgba(0, 0, 0, .5);
+    background:rgb(121, 118, 118);
     transition: all .2s ease-in-out;
     position: absolute;
     top: 45%;
@@ -632,7 +632,7 @@ a[data-lightbox]:hover img {
 
 .snapshot-lb .lightbox-caption {
     padding: 0;
-    color: rgba(0, 0, 0, .5);
+    color:rgb(121, 118, 118);
     background: none;
 }
 
@@ -750,7 +750,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.9);
+    background-color: #333333;
     padding: 40px 40px 40px 40px;
 }
 
@@ -768,20 +768,20 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #bf5921;
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color:#f3976c!important;
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
+    background: #bf5921;
     color: #FFFFFF!important;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
+    background: #c2562f!important;
     color: #FFFFFF!important;
 }
 
@@ -794,11 +794,11 @@ h4 {
 }
 
 .ltc-atomic-tangerine {
-    color: #F3976C!important;
+    color:#bf5921!important;
 }
 
 .ltc-atomic-tangerine:hover {
-    color: #c27956!important;
+    color:#c2562f!important;
 }
 
 .icon-dark-slate-blue {
@@ -810,9 +810,9 @@ h4 {
     background-image: url("../img/dots-bg.png");
 }
 
-.bg-lines-h2-bg {
+/* .bg-lines-h2-bg {
     background-image: url("../img/lines-h2-bg.png");
-}
+} */
 
 .bg-banniere {
     background-image: url("../img/la-chouette-agence-banniere.webp");
