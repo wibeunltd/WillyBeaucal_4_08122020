@@ -25,7 +25,7 @@ function setUpSpecialNavs() {
                         $(".blocsapp-special-menu blocsnav").addClass("open"), $(".content-tint").addClass("on"), $("body").addClass("lock-scroll")
                     }, 10)
             }
-    }), $("body").on("mousedown touchstart", ".content-tint, .close-special-menu", function(t) {
+    }), $("body").on("mousedown touchstart", ".content-tint, .close-special-menu", function() {
         $(".content-tint").removeClass("on"), $(".selected-nav").click(), setTimeout(function() {
             $(".content-tint").remove()
         }, 10)
@@ -37,17 +37,17 @@ function setUpSpecialNavs() {
 function extraNavFuncs() {
     $(".site-navigation a").click(function(t) {
         $(t.target).closest(".dropdown-toggle").length || $(".navbar-collapse").collapse("hide")
-    }), $("a.dropdown-toggle").click(function(t) {
-        $(this).parent().addClass("target-open-menu"), $(this).closest(".dropdown-menu").find(".dropdown.open").each(function(t) {
+    }), $("a.dropdown-toggle").click(function() {
+        $(this).parent().addClass("target-open-menu"), $(this).closest(".dropdown-menu").find(".dropdown.open").each(function() {
             $(this).hasClass("target-open-menu") || $(this).removeClass("open")
         }), $(".target-open-menu").removeClass("target-open-menu")
     })
 }
 
 function setFillScreenBlocHeight() {
-    $(".bloc-fill-screen").each(function(t) {
+    $(".bloc-fill-screen").each(function() {
         var e = $(this);
-        window.fillBodyHeight = 0, $(this).find(".container").each(function(t) {
+        window.fillBodyHeight = 0, $(this).find(".container").each(function() {
             fillPadding = 2 * parseInt($(this).css("padding-top")), e.hasClass("bloc-group") ? fillBodyHeight = fillPadding + $(this).outerHeight() + 50 : fillBodyHeight = fillBodyHeight + fillPadding + $(this).outerHeight() + 50
         }), $(this).css("height", getFillHeight() + "px")
     })
@@ -89,13 +89,13 @@ function stickyNavToggle() {
 }
 
 function hideAll() {
-    $(".animated").each(function(t) {
+    $(".animated").each(function() {
         $(this).closest(".hero").length || $(this).removeClass("animated").addClass("hideMe")
     })
 }
 
 function inViewCheck() {
-    $($(".hideMe").get().reverse()).each(function(t) {
+    $($(".hideMe").get().reverse()).each(function() {
         var e = jQuery(this),
             i = e.offset().top + e.height(),
             a = $(window).scrollTop() + $(window).height();
@@ -161,7 +161,7 @@ function setUpLightBox() {
 
 function addSwipeSupport() {
     $(".carousel-inner").length && $(".carousel-inner").swipe({
-        swipeLeft: function(t, e, i, a, o) {
+        swipeLeft: function() {
             $(this).parent().carousel("next")
         },
         swipeRight: function() {
@@ -179,7 +179,7 @@ function addKeyBoardSupport() {
 
 function addLightBoxSwipeSupport() {
     $("#lightbox-image").length && $("#lightbox-image").swipe({
-        swipeLeft: function(t, e, i, a, o) {
+        swipeLeft: function() {
             $(".next-lightbox").is(":visible") && $(".next-lightbox").click()
         },
         swipeRight: function() {
@@ -194,10 +194,4 @@ $(document).ready(function() {
             scrollTop: $("#scroll-hero").closest(".bloc").height()
         }, "slow")
     }), extraNavFuncs(), setUpSpecialNavs(), setUpDropdownSubs(), setUpLightBox(), setUpVisibilityToggle(), addSwipeSupport(), addKeyBoardSupport(), -1 != navigator.userAgent.indexOf("Safari") && -1 == navigator.userAgent.indexOf("Chrome") && $("#page-loading-blocs-notifaction").remove()
-}), $(window).load(function() {
-    setFillScreenBlocHeight(), animateWhenVisible(), $("#page-loading-blocs-notifaction").remove()
-}).resize(function() {
-    setFillScreenBlocHeight()
-}), $(function() {
-    $('[data-toggle="tooltip"]').tooltip()
 });
