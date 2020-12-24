@@ -331,7 +331,7 @@ a:hover {
 
 .nav > li a:hover,
 .nav > li a:focus {
-    border: dashed #384778;
+    border-bottom: 1px dashed black;
 }
 
 .navbar-toggle {
@@ -453,9 +453,8 @@ nav .caret {
 .btn-d,
 .btn-d:hover,
 .btn-d:focus {
-    /* color: #FFF;
-    background: rgba(0, 0, 0, .3); */
-    border: dashed #384778;
+    color: #FFF;
+    background: rgba(0, 0, 0, .3);
 }
 
 button {
