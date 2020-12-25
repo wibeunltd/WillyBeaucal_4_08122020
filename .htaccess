@@ -37,6 +37,3 @@ ExpiresByType application/x-shockwave-flash « access 1 month »
 ExpiresByType image/x-icon « access 1 month »
 ExpiresDefault « access 2 days »
 </IfModule>
-#Redirection www
-RedirectPermanent https://www.wibeunltd.github.io/WillyBeaucal_4_08122020/
-https://wibeunltd.github.io/WillyBeaucal_4_08122020/
