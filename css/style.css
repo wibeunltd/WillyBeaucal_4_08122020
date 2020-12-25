@@ -832,7 +832,7 @@ h4 {
     }
 
     .bg-banniere {
-        background-image: url("../img/la-chouette-agence-banniere-small.webp");
+        background-image: url("../img/la-chouette-agence-banniere-large.webp");
     }
 }
 
@@ -1022,6 +1022,10 @@ h4 {
     .blocsapp-device-iphone5 img {
         width: 180px;
         height: 320px;
+    }
+
+    .bg-banniere {
+        background-image: url("../img/la-chouette-agence-banniere-small.webp");
     }
 }
 
