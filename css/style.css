@@ -359,6 +359,10 @@ a:hover {
     z-index: 2;
 }
 
+.intro{
+    margin-right: 10px;
+    margin-left: 10px;
+}
 
 @media (min-width: 768px) {
     .site-navigation {
